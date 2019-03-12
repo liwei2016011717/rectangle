@@ -1,18 +1,17 @@
 $(function(){
   //console.log('hello');
   var $width=$('#width'),
-      $length=$('#length'),
+      $height=$('#height'),
       $btnCal=$('#btn'),
       $perimeter=$('#perimeter'),
       $area=$('#area');
   $btnCal.click(function(){
     var w=Number($width.val()),
-        l=Number($length.val());
+        h=Number($height.val());
 
-    var p=2*(w+l),
-        a=w*l;
+    var r=new Rectangle(w,h);
     
-    $perimeter.val(p);
-    $area.val(a);
-  })
+    $perimeter.val(r.perimeter());
+    $area.val(r.area());
+  });
 })
