@@ -1,14 +1,10 @@
-function Rectangle(width, height) {
+funtion Rectangle(width, height) {
   var w = Number(width),
       h = Number(height);
   this.area = function() {
-      return w * h;
-
+    return w * h;
   };
   this.perimeter = function() {
-
-      return 2 * (w + h);
-
+    return 2 * (w + h);
   };
-
 }

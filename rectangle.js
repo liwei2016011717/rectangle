@@ -14,4 +14,4 @@ $(function(){
     $perimeter.val(r.perimeter());
     $area.val(r.area());
   });
-})
+});
