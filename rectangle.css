@@ -1,29 +1,30 @@
 /*body{
   background:red;  
 }*/
-/*input,label{
+input,label{
   height:20px;
+  margin-top:20px;
 }
 #btn{
   width:40px;
 }
 #main{
   width:370px;
-  //margin:50px auto;
   font-size:12px;
 }
 
 #width-validation,#height-validation{
   position:absolute;
   color:red;
-  left:220px;
+  height:20px;
+  left:30px;
 }
 
-#width-validation{
-  top:40px;
-}
+//#width-validation{
+  //top:100px;
+//}
 
 #height-validation{
-  top:10px;
-}*/
+  top:55px;
+}
 

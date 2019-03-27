@@ -1,4 +1,4 @@
-funtion Rectangle(width, height) {
+function Rectangle(width, height) {
   var w = Number(width),
       h = Number(height);
   this.area = function() {
