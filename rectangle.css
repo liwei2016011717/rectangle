@@ -1,24 +1,29 @@
 /*body{
   background:red;  
 }*/
+/*input,label{
+  height:20px;
+}
+#btn{
+  width:40px;
+}
 #main{
-  width:400px;
-  height:500px;
+  width:370px;
+  //margin:50px auto;
+  font-size:12px;
 }
 
 #width-validation,#height-validation{
   position:absolute;
-  width:100px;
-  height:100px;
   color:red;
-  left:100px;
+  left:220px;
 }
 
 #width-validation{
-  top:100px;
+  top:40px;
 }
 
 #height-validation{
-  top:50px;
-}
+  top:10px;
+}*/
 
