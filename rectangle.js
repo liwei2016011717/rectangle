@@ -7,6 +7,7 @@ $(function(){
       $widthValidation=$('#width-validation'),
       $heightValidation=$('#height-validation'),
       $area=$('#area');
+      $flag=false;
   
   //校验
   $height.focusout(function(){
@@ -58,6 +59,7 @@ $(function(){
     }
   });
   $btnCal.click(function(){
+    if(h!==''&&w!==''){
     var w=Number($width.val()),
         h=Number($height.val());
 
@@ -65,5 +67,6 @@ $(function(){
     
     $perimeter.val(r.perimeter());
     $area.val(r.area());
+  }
   });
 });
