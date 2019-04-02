@@ -8,7 +8,23 @@ $(function(){
       $heightValidation=$('#height-validation'),
       $area=$('#area');
   
-  //校验
+  //字符校验
+  $height.keypress(function(e){
+    if(/[abcdf-zABCDF-Z`~!@#$%^&*()=_+[\]{}|;:'",<>/?\\]/.test(e.key)){
+      e.preventDefault();
+    }
+    if(e.key==='.'){
+      if(e.target.value==='') e.preventDefault();
+
+      if(e.target.value.indexOf('.')!==-1){
+        e.preventDefault();
+      }else{
+        if(e.target.selectionStart===0) e.preventDefault();
+      }
+    }
+  });
+
+  //字段
   $height.focusout(function(){
     var h=$height.val();
     if(h===''){
