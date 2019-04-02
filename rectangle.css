@@ -27,4 +27,13 @@ input,label{
 #height-validation{
   top:55px;
 }
+input:valid+span:after {
+  content: '✓';
+  color: green;
+}
+
+input:invalid+span:after{
+  content:"×";
+  color:red;
+}
 
