@@ -7,7 +7,7 @@ $(function(){
       $widthValidation=$('#width-validation'),
       $heightValidation=$('#height-validation'),
       $area=$('#area');
-      $flag=false;
+      isflag=false;
   
   //校验
   $height.focusout(function(){
@@ -59,14 +59,12 @@ $(function(){
     }
   });
   $btnCal.click(function(){
-    if(h!==''&&w!==''){
-    var w=Number($width.val()),
+      var w=Number($width.val()),
         h=Number($height.val());
 
-    var r=new Rectangle(w,h);
+      var r=new Rectangle(w,h);
     
-    $perimeter.val(r.perimeter());
-    $area.val(r.area());
-  }
+      $perimeter.val(r.perimeter());
+      $area.val(r.area());
   });
 });
